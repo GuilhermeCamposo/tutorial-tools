@@ -1,6 +1,6 @@
-name: "quay.io/GuilhermeCamposo/tutorial-tools"
+name: "quay.io/gcamposo/java11-tools"
 version: "0.0.1"
-from: "quay.io/openshiftlabs/cloudnative-workspaces-quarkus:2.7"
+from: "docker.io/centos:8"
 description: "Java 11 image for Tutorials"
 
 labels:
