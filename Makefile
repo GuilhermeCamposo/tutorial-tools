@@ -23,7 +23,7 @@ test: build
 .PHONY: build-tools
 build-tools:
 	cekit -v build --overrides-file tutorial-tools-overrides.yaml $(BUILD_ENGINE) --no-squash
-	docker-squash ${TOOLS_IMAGE}:${IMAGE_VERSION} --tag=${TOOLS_IMAGE}:${IMAGE_VERSION}
+	# docker-squash ${TOOLS_IMAGE}:${IMAGE_VERSION} --tag=${TOOLS_IMAGE}:${IMAGE_VERSION}
 
 .PHONY: push-tools
 push-tools:

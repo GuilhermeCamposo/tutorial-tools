@@ -20,11 +20,11 @@ modules:
     - name: common
       version: 0.0.1
     - name: user
-      version: 0.0.1 
+      version: 0.0.1
     - name: openshift
       version: 4.1.9
     - name: graalvm-ce
-      version: 19.2.0.1
+      version: 21.2.0
     - name: knative
       version: 0.0.1
     - name: utils
@@ -33,6 +33,8 @@ modules:
       version: 3.6.1
     - name: maven-config
       version: 0.0.1
+    - name: kamel
+      version: 1.6.0
 run:
   user: 10001
   entrypoint:
