@@ -34,7 +34,7 @@ modules:
     - name: maven-config
       version: 0.0.1
     - name: kamel
-      version: 1.6.0
+      version: 1.4.0
 run:
   user: 10001
   entrypoint:
