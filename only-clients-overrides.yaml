@@ -18,7 +18,7 @@ modules:
     - path: clients-modules
   install:
     - name: common
-      version: 0.0.1  
+      version: 0.0.1
     - name: user
       version: 0.0.1
     - name: openshift
@@ -27,8 +27,9 @@ modules:
       version: 0.0.1
     - name: utils
       version: 0.0.1
-
-packages: 
+    - name: kamel
+      version: 1.6.0
+packages:
   manager: yum
 
 run:

@@ -1,0 +1,30 @@
+schema_version: 1
+
+name: kamel
+version: 1.6.0
+description: "Install Camelk CLI"
+
+# labels:
+#    - name: "com.rhd.tutorial.tools.kn-version"
+#      value: "v0.2.0"
+#    - name: "com.rhd.tutorial.tools.tkn-version"
+#      value: "0.2.2"
+#    - name: "io.k8s.description"
+#      value: "The Knative and Tekton Clients"
+#    - name: "io.k8s.display-name"
+#      value: "Tutorial Tools Knative"
+#
+# envs:
+#   - name: "KN_VERSION"
+#     value: "v0.2.0"
+#   - name: "TKN_VERSION"
+#     value: "0.4.0"
+
+# unfortunately by now the version needs to be hardcoded.
+artifacts:
+  - name: camelk-cli
+    url:  https://github.com/apache/camel-k/releases/download/v1.6.0/camel-k-client-1.6.0-linux-64bit.tar.gz
+    target: camel-k-client.tar.gz
+
+execute:
+ - script: install.sh
