@@ -28,11 +28,11 @@ artifacts:
     url: https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-21.2.0/graalvm-ce-java11-linux-amd64-21.2.0.tar.gz
     target: graalvm-ce-amd64.tar.gz
 
-packages:
-  install:
-    - gcc
-    - glibc-devel
-    - zlib-devel
+# packages:
+#   install:
+#     - gcc
+#     - glibc-devel
+#     - zlib-devel
 
 execute:
  - script: install.sh

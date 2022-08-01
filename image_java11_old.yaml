@@ -1,4 +1,4 @@
-name: "quay.io/gcamposo/java-maven-basic"
+name: "quay.io/gcamposo/java11-tools"
 version: "0.0.1"
 from: "docker.io/centos:8"
 description: "Java 11 image for Tutorials"

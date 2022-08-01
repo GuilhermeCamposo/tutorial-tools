@@ -1,0 +1,35 @@
+schema_version: 1
+
+labels:
+- name: "maintainer"
+  value: "GCamposo"
+
+envs:
+   - name: PATH
+     value: "$JAVA_HOME/bin:$PATH"
+   - name: HOME
+     value: "/opt/developer"
+# Define the  modules
+# Migrate to use quarkus official repo
+modules:
+  repositories:
+    - path: shared-modules
+    - path: clients-modules
+    - path: quarkus-modules
+  install:
+    - name: user
+      version: 0.0.1
+    - name: openshift
+      version: 4.9.34
+    - name: graalvm-ce
+      version: 21.2.0
+    - name: maven
+      version: 3.6.1
+run:
+  user: 10001
+  entrypoint:
+    - "/entrypoint.sh"
+  cmd:
+    - "tail"
+    - "-f"
+    - "/dev/null"
